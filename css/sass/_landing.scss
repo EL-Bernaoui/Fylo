@@ -7,7 +7,7 @@
   &::before {
     content: '';
     position: absolute;
-    background: url('/images/bg-curvy-desktop.svg') center/cover no-repeat;
+    background: url('../images/bg-curvy-desktop.svg') center/cover no-repeat;
     height: 55%;
     width: 100%;
     max-width: 100%;
@@ -16,7 +16,7 @@
     z-index: -1;
 
     @include breakpoints(medium) {
-      background: url('/images/bg-curvy-mobile.svg') center/cover no-repeat;
+      background: url('../images/bg-curvy-mobile.svg') center/cover no-repeat;
 
     }
   }

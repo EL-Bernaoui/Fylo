@@ -66,7 +66,7 @@ a {
 .hero::before {
   content: "";
   position: absolute;
-  background: url("/images/bg-curvy-desktop.svg") center/cover no-repeat;
+  background: url("../images/bg-curvy-desktop.svg") center/cover no-repeat;
   height: 55%;
   width: 100%;
   max-width: 100%;
@@ -76,7 +76,7 @@ a {
 }
 @media (max-width: 767px) {
   .hero::before {
-    background: url("/images/bg-curvy-mobile.svg") center/cover no-repeat;
+    background: url("../images/bg-curvy-mobile.svg") center/cover no-repeat;
   }
 }
 .hero .box {
@@ -202,7 +202,7 @@ a {
 .testimonials .container::before {
   content: "";
   position: absolute;
-  background: url("/images/bg-quotes.png");
+  background: url("../images/bg-quotes.png");
   width: 3.75rem;
   height: 3.125rem;
   background-repeat: no-repeat;
