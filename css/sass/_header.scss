@@ -1,0 +1,49 @@
+// Start Header
+.header {
+  height: 5rem;
+  margin-top: 2rem;
+
+  .container {
+    @include breakpoints(custom) {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .logo {
+      a {
+        img {
+          width: 9.375rem;
+        }
+      }
+    }
+
+    .nav {
+      @include breakpoints(custom) {
+        margin-top: 1rem;
+      }
+
+      .nav-items {
+        li {
+          a {
+            display: block;
+            font-family: $raleway;
+            color: hsl(0 0% 100% / 70%);
+            padding: 0.625rem 1rem;
+            transition: $transition;
+
+            &:hover {
+              color: $white;
+              text-decoration: underline;
+            }
+
+            @include breakpoints(custom) {
+              padding: 0.625rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Header

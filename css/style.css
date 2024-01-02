@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(217, 28%, 15%);
+  color: hsl(0, 0%, 100%);
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 5rem;
+  margin-top: 2rem;
+}
+@media (max-width: 460px) {
+  .header .container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+.header .container .logo a img {
+  width: 9.375rem;
+}
+@media (max-width: 460px) {
+  .header .container .nav {
+    margin-top: 1rem;
+  }
+}
+.header .container .nav .nav-items li a {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  color: hsla(0, 0%, 100%, 0.7);
+  padding: 0.625rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+.header .container .nav .nav-items li a:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+}
+@media (max-width: 460px) {
+  .header .container .nav .nav-items li a {
+    padding: 0.625rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero {
+    margin-top: 50px;
+  }
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background: url("/images/bg-curvy-desktop.svg") center/cover no-repeat;
+  height: 55%;
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  bottom: -15.625rem;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .hero::before {
+    background: url("/images/bg-curvy-mobile.svg") center/cover no-repeat;
+  }
+}
+.hero .box {
+  max-width: 60%;
+  margin: 2.5rem auto;
+}
+@media (max-width: 991px) {
+  .hero .box {
+    max-width: 100%;
+  }
+}
+.hero .box h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media (max-width: 460px) {
+  .hero .box h3 {
+    font-size: 1.5rem;
+  }
+}
+.hero .box p {
+  max-width: 65%;
+  margin: 2rem auto 1.5rem;
+  line-height: 1.6;
+}
+@media (max-width: 460px) {
+  .hero .box p {
+    max-width: 100%;
+  }
+}
+.hero .box .btn_cta {
+  font-family: "Raleway", sans-serif;
+  padding: 0.75rem 4.5rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  font-size: 0.875rem;
+  transition: 0.3s ease-in-out;
+}
+.hero .box .btn_cta:hover {
+  background: linear-gradient(hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+.services {
+  margin-top: 12.5rem;
+  padding-bottom: 3.125rem;
+  background-color: hsl(218, 28%, 13%);
+}
+.services .box {
+  max-width: 23.75rem;
+  margin: auto;
+}
+.services .box img {
+  width: 5.1875rem;
+  height: 4.875rem;
+}
+.services .box h5 {
+  margin: 1.25rem 0 0.625rem;
+  font-family: "Raleway", sans-serif;
+}
+.services .box p {
+  line-height: 1.6;
+}
+
+.how_we_work {
+  padding: 3.125rem 0;
+  background-color: hsl(218, 28%, 13%);
+}
+.how_we_work .info {
+  margin-left: 2rem;
+}
+@media (max-width: 991px) {
+  .how_we_work .info {
+    margin-left: 0;
+  }
+}
+.how_we_work .info h2 {
+  max-width: 18.75rem;
+  font-size: 2.1875rem;
+  line-height: 1.3;
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 767px) {
+  .how_we_work .info h2 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .how_we_work .info h2 {
+    font-size: 1.5rem;
+  }
+}
+.how_we_work .info p {
+  line-height: 1.6;
+  margin: 1.25rem 0;
+}
+.how_we_work .info p :first-child {
+  margin-bottom: 0.625rem;
+}
+.how_we_work .info .work_btn {
+  gap: 0.625rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 0.125rem solid hsl(176, 68%, 64%);
+  padding-bottom: 0.3125rem;
+  font-family: "Raleway", sans-serif;
+  color: hsl(176, 68%, 64%);
+  transition: 0.3s ease-in-out;
+}
+.how_we_work .info .work_btn:hover {
+  border-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonials {
+  padding: 8.125rem 0 3.125rem;
+  background-color: hsl(218, 28%, 13%);
+}
+@media (max-width: 991px) {
+  .testimonials {
+    padding-top: 3.125rem;
+  }
+}
+.testimonials .container::before {
+  content: "";
+  position: absolute;
+  background: url("/images/bg-quotes.png");
+  width: 3.75rem;
+  height: 3.125rem;
+  background-repeat: no-repeat;
+  top: -2.5rem;
+  left: 0.25rem;
+}
+.testimonials .box {
+  background-color: hsl(219, 30%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 2.5rem 1.5rem 1.5rem;
+  box-shadow: 0px 0px 12px hsla(0, 0%, 0%, 0.15);
+}
+.testimonials .box .info {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+}
+.testimonials .box .info img {
+  width: 2.1875rem;
+  border-radius: 50%;
+}
+.testimonials .box .info .more h5 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.testimonials .box .info .more span {
+  font-size: 0.625rem;
+}
+
+.subscription {
+  padding-top: 6.25rem;
+  background-color: hsl(218, 28%, 13%);
+}
+.subscription .box {
+  background-color: hsl(217, 28%, 15%);
+  padding: 2.5rem 1.25rem;
+  border-radius: 0.625rem;
+  max-width: 62rem;
+  transform: translateY(100px);
+}
+.subscription .box .info h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 460px) {
+  .subscription .box .info h4 {
+    font-size: 1.875rem;
+  }
+}
+.subscription .box .info p {
+  max-width: 85%;
+  margin: 1.25rem auto 2.5rem;
+}
+@media (max-width: 460px) {
+  .subscription .box .info p {
+    max-width: 100%;
+  }
+}
+.subscription .box form {
+  width: 90%;
+  gap: 1.25rem;
+}
+@media (max-width: 991px) {
+  .subscription .box form {
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  .subscription .box form .field_2 {
+    width: 14.375rem !important;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+.subscription .box form .email_box input[type=email] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  outline: none;
+}
+.subscription .box form .email_box .wrong {
+  color: hsl(0, 100%, 63%);
+  text-align: start;
+  padding: 0.3125rem 0 0 1.25rem;
+  font-size: 0.75rem;
+  display: none;
+}
+.subscription .box form input[type=submit] {
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  transition: 0.3s ease-in-out;
+}
+.subscription .box form input[type=submit]:hover {
+  background: linear-gradient(hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+.footer {
+  background-color: hsl(216, 53%, 9%);
+  padding: 11.25rem 0 3.75rem;
+}
+.footer .description {
+  gap: 1.25rem 2rem;
+  margin-top: 2.5rem;
+}
+@media (max-width: 576px) {
+  .footer .description {
+    flex-direction: column !important;
+  }
+}
+.footer .description .box {
+  gap: 1.25rem;
+}
+.footer .description .box img {
+  width: 1rem;
+}
+.footer .description .box p {
+  margin: 0;
+  max-width: 80%;
+}
+.footer .description .main_box .box {
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.footer .description .main_box .box img {
+  width: 1rem;
+}
+.footer .description .main_box .box p {
+  margin: 0;
+}
+.footer .nav {
+  margin-top: 5rem;
+}
+@media (max-width: 991px) {
+  .footer .nav {
+    margin-top: 2rem;
+  }
+}
+.footer .nav li {
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 991px) {
+  .footer .nav li {
+    justify-content: start;
+  }
+}
+.footer .nav li a {
+  display: block;
+  padding: 0.625rem;
+  color: hsl(0, 0%, 100%);
+  width: 5.25rem;
+  transition: 0.3s ease-in-out;
+}
+.footer .nav li a:hover {
+  font-weight: bold;
+}
+.footer .social_media {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+@media (max-width: 991px) {
+  .footer .social_media {
+    justify-content: start !important;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .footer .social_media {
+    justify-content: center !important;
+  }
+}
+.footer .social_media li a {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  border: 0.0625rem solid hsl(0, 0%, 100%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.footer .social_media li a:hover {
+  color: hsl(176, 68%, 64%);
+  border-color: hsl(176, 68%, 64%);
+}/*# sourceMappingURL=style.css.map */

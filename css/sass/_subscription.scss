@@ -1,0 +1,84 @@
+// Start Subscription Section
+.subscription {
+  padding-top: 6.25rem;
+  background-color: $dark_blue_2;
+
+  .box {
+    background-color: $dark_blue_1;
+    padding: 2.5rem 1.25rem;
+    border-radius: 0.625rem;
+    max-width: 62rem;
+    transform: translateY(100px);
+
+    .info {
+      h4 {
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: $raleway;
+
+        @include breakpoints (custom) {
+          font-size: 1.875rem;
+        }
+      }
+
+      p {
+        max-width: 85%;
+        margin: 1.25rem auto 2.5rem;
+
+        @include breakpoints (custom) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    form {
+      width: 90%;
+      gap: 1.25rem;
+
+      @include breakpoints (large) {
+        flex-direction: column;
+      }
+
+      .field_2 {
+        @include breakpoints (large) {
+          width: 14.375rem !important;
+          max-width: 100%;
+          margin: auto;
+        }
+      }
+
+      .email_box {
+        input[type='email'] {
+          width: 100%;
+          padding: 0.75rem 1.25rem;
+          border-radius: 2rem;
+          outline: none;
+        }
+
+        .wrong {
+          color: $light_red;
+          text-align: start;
+          padding: 0.3125rem 0 0 1.25rem;
+          font-size: 0.75rem;
+          display: none;
+        }
+      }
+
+      input[type='submit'] {
+        padding: 0.75rem 1.25rem;
+        border-radius: 2rem;
+        outline: none;
+        font-family: $raleway;
+        background: linear-gradient(to right, $cyan, $blue);
+        transition: $transition;
+
+        &:hover {
+          background: linear-gradient($cyan, $cyan);
+
+        }
+      }
+    }
+  }
+}
+
+// End Subscription Section

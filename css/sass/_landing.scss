@@ -1,0 +1,68 @@
+// Start Hero section
+.hero {
+  @include breakpoints(custom) {
+    margin-top: 50px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('/images/bg-curvy-desktop.svg') center/cover no-repeat;
+    height: 55%;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    bottom: -15.625rem;
+    z-index: -1;
+
+    @include breakpoints(medium) {
+      background: url('/images/bg-curvy-mobile.svg') center/cover no-repeat;
+
+    }
+  }
+
+  .box {
+    max-width: 60%;
+    margin: 2.5rem auto;
+
+    @include breakpoints(large) {
+      max-width: 100%;
+    }
+
+    h3 {
+      font-family: $raleway;
+      font-weight: 700;
+      font-size: 2rem;
+
+      @include breakpoints(custom) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      max-width: 65%;
+      margin: 2rem auto 1.5rem;
+      line-height: 1.6;
+
+      @include breakpoints(custom) {
+        max-width: 100%;
+      }
+    }
+
+    .btn_cta {
+      font-family: $raleway;
+      padding: 0.75rem 4.5rem;
+      background: linear-gradient(to right, $cyan, $blue);
+      font-size: 0.875rem;
+      transition: $transition;
+
+      &:hover {
+        background: linear-gradient($cyan, $cyan);
+
+      }
+    }
+
+  }
+}
+
+// End Hero section

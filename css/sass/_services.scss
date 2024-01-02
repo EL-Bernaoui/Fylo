@@ -1,0 +1,27 @@
+// Start Services Section
+.services {
+  margin-top: 12.5rem;
+  padding-bottom: 3.125rem;
+  background-color: $dark_blue_2;
+
+  .box {
+    max-width: 23.75rem;
+    margin: auto;
+
+    img {
+      width: 5.1875rem;
+      height: 4.875rem;
+    }
+
+    h5 {
+      margin: 1.25rem 0 0.625rem;
+      font-family: $raleway;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  }
+}
+
+// End Services Section

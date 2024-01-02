@@ -1,0 +1,111 @@
+// Start Footer Section 
+.footer {
+  background-color: $dark_blue_3;
+  padding: 11.25rem 0 3.75rem;
+
+
+  .description {
+    gap: 1.25rem 2rem;
+    margin-top: 2.5rem;
+
+    @include breakpoints(small) {
+      flex-direction: column !important;
+    }
+
+    .box {
+      gap: 1.25rem;
+
+      img {
+        width: 1rem;
+      }
+
+      p {
+        margin: 0;
+        max-width: 80%;
+      }
+    }
+
+    .main_box {
+      .box {
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+
+        img {
+          width: 1rem;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .nav {
+    margin-top: 5rem;
+
+    @include breakpoints(large) {
+      margin-top: 2rem;
+    }
+
+    li {
+      display: flex;
+      justify-content: end;
+
+      @include breakpoints(large) {
+        justify-content: start;
+      }
+
+      a {
+        display: block;
+        padding: 0.625rem;
+        color: $white;
+        width: 5.25rem;
+        transition: .3s ease-in-out;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .social_media {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+
+    @include breakpoints(large) {
+      justify-content: start !important;
+      margin-top: 2rem;
+    }
+
+    @include breakpoints(small) {
+      justify-content: center !important;
+    }
+
+    li {
+      a {
+        color: $white;
+        font-size: 16px;
+        border: 0.0625rem solid $white;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $transition;
+
+        &:hover {
+          color: $cyan;
+          border-color: $cyan;
+        }
+      }
+    }
+  }
+}
+
+// End Footer Section
