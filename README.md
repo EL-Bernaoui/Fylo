@@ -6,7 +6,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 - [Screenshot](#screenshot)
 - [Links](#links)
-- [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
 - [Continued development](#continued-development)
@@ -20,9 +19,8 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ### Links
 
 - Solution URL: (https://github.com/EL-Bernaoui/Fylo)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://el-bernaoui.github.io/Fylo/)
 
-## My process
 
 ### Built with
 
@@ -36,16 +34,17 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 - [Wowjs](https://wowjs.uk/) - library for Animation
 
 ### What I learned
+I learned how to build landing page a nice one and I practiced all the technologies I learned before ._.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+[...]
 
 ### Useful resources
 
-- [mdn](https://developer.mozilla.org/en-US/) - This helped me for many time understanding some property functionality.
+- [mdn](https://developer.mozilla.org/en-US/) - This helped me many times to understand some property's functionality.
 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [w3school](https://www.w3schools.com/)
 
 ## Author
 
